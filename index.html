@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Transportation Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="transport-form">
+        <div class="transport-work form-group">
+          <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
+          <input type="checkbox" name="work-transportation" value="bike"> Riding a bike.<br>
+          <input type="checkbox" name="work-transportation" value="bus"> Taking the bus.<br>
+          <input type="checkbox" name="work-transportation" value="horse"> Riding a horse.<br>
+          <input type="checkbox" name="work-transportation" value="motorcycle"> Riding a motorcycle.<br>
+          <input type="checkbox" name="work-transportation" value="car"> Driving a car.<br>
+        </div>
+        <div class="transport-fun">
+
+        </div>
+        <button type="submit">Submit!</button>
+      </form>
+      <div class="initially-hidden" id="transport-responses">
+        <span>
+          <p><strong>Users took the transportation types below:</strong></p>
+        </span>
+      </div>
+    </div> <!--end container -->
+  </body>
+</html>
