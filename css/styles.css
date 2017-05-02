@@ -1,0 +1,15 @@
+#work-responses, #fun-responses {
+  display: none;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #337ab7;
+  color: white;
+  border: medium solid black;
+}
+
+#transport-form p {
+  font-weight: bold;
+  color: #337ab7;
+}

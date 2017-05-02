@@ -9,8 +9,9 @@
   </head>
   <body>
     <div class="container">
+      <h1 class="jumbotron">Transportation Survey</h1>
       <form id="transport-form">
-        <div class="transport-work form-group">
+        <div class="transport-work form-group col-sm-6">
           <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
           <input type="checkbox" name="work-transportation" value="bike"> Riding a bike.<br>
           <input type="checkbox" name="work-transportation" value="bus"> Taking the bus.<br>
@@ -18,14 +19,22 @@
           <input type="checkbox" name="work-transportation" value="motorcycle"> Riding a motorcycle.<br>
           <input type="checkbox" name="work-transportation" value="car"> Driving a car.<br>
         </div>
-        <div class="transport-fun">
-
+        <div class="transport-fun form-group col-sm-6">
+          <p>In the past year, I have used the following modes of transportation to travel to social activities:</p>
+          <input type="checkbox" name="fun-transportation" value="bike"> Riding a bike.<br>
+          <input type="checkbox" name="fun-transportation" value="bus"> Taking the bus.<br>
+          <input type="checkbox" name="fun-transportation" value="horse"> Riding a horse.<br>
+          <input type="checkbox" name="fun-transportation" value="motorcycle"> Riding a motorcycle.<br>
+          <input type="checkbox" name="fun-transportation" value="car"> Driving a car.<br>
         </div>
-        <button type="submit">Submit!</button>
+        <button type="submit" class="btn-primary">Submit!</button>
       </form>
-      <div class="initially-hidden" id="transport-responses">
-        <span>
-          <p><strong>Users took the transportation types below:</strong></p>
+      <div>
+        <span id="work-responses">
+          <p><strong>Users took the transportation types below to get to work or school:</strong></p>
+        </span>
+        <span id="fun-responses">
+          <p><strong>Users took the transportation types below to get to their social life:</strong></p>
         </span>
       </div>
     </div> <!--end container -->
